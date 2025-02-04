@@ -1,9 +1,10 @@
 package com.thisismeamir.xpect
 
-import com.thisismeamir.utils.Printer
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
 
+import com.thisismeamir.xpect.commands.XpectCLI
+import picocli.CommandLine
+
+fun main(args: Array<String>) {
+    CommandLine(XpectCLI()).execute(*args)
 }
